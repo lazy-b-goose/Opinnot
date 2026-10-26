@@ -150,10 +150,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Generation
   ocean: {fileID: 4088140066920847097, guid: 47a912534faf5fe4db94d6e399c3d036, type: 3}
   see: {fileID: 5919741877938751957, guid: f73f0d593caeb7641a1455828cc5b08c, type: 3}
-  beach: {fileID: 4876527788157138425, guid: 2f05d5b24addf4d4d86987ea03aeb027, type: 3}
-  plaine: {fileID: 4454285786146013335, guid: da336b507813ab24cba024ebcbb45cd2, type: 3}
-  hill: {fileID: 4747630167450913792, guid: a11800351c723404cbd8b90805ce1849, type: 3}
+  beachF: {fileID: 4876527788157138425, guid: 2f05d5b24addf4d4d86987ea03aeb027, type: 3}
+  plaineF: {fileID: 4454285786146013335, guid: da336b507813ab24cba024ebcbb45cd2, type: 3}
+  hillF: {fileID: 4747630167450913792, guid: a11800351c723404cbd8b90805ce1849, type: 3}
   mountain: {fileID: 358156819272195568, guid: 14e4dd80eb147db4a93d2e76533ea30c, type: 3}
+  beachStone: {fileID: 7370832105400257939, guid: 8615701e59573aa498b0cbb6a9488191, type: 3}
+  plaineStone: {fileID: 8372599553926625798, guid: 26eaf8a9b638a864d804d31ff8e78d29, type: 3}
+  hillStone: {fileID: 5366897233306911880, guid: e86c8b6d86130474c901f407de82bce7, type: 3}
+  beachIron: {fileID: 2013604598071198144, guid: e6031cdaee83c374eb495bf06c836a7f, type: 3}
+  plaineIron: {fileID: 5741803442307484628, guid: ffc9568b259db13488731cc2045dadb0, type: 3}
+  hillIron: {fileID: 4086188144808186693, guid: fd24e79f97ca5bb45bcc0fce16d8bb04, type: 3}
+  beachGold: {fileID: 1544400993822693362, guid: 7920218c067347e43a63ac54946c2b90, type: 3}
+  plaineGold: {fileID: 5829694418368269409, guid: b18ff34751b54ce489aae029d006cd75, type: 3}
+  hillGold: {fileID: 6097801966358576946, guid: 3714542b7bc47d147854d3dcb5367291, type: 3}
   oceanL: 0.3
   seeL: 0.35
   beachL: 0.4
@@ -161,6 +170,7 @@ MonoBehaviour:
   hillL: 0.7
   Scale: 0.03
   Scale2: 0.15
+  ScaleOre: 0.15
   Height: 100
   Width: 100
 --- !u!4 &157540431

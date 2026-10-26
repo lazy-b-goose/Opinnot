@@ -4,10 +4,25 @@ public class Generation : MonoBehaviour
 {
     public GameObject ocean;            //префабы высот
     public GameObject see;
-    public GameObject beach;
-    public GameObject plaine;
-    public GameObject hill;
+    public GameObject beachF;
+    public GameObject plaineF;
+    public GameObject hillF;
     public GameObject mountain;
+
+    GameObject beach;
+    GameObject plaine;
+    GameObject hill;
+
+    public GameObject beachStone;           //префабы камня
+    public GameObject plaineStone;
+    public GameObject hillStone;
+    public GameObject beachIron;            //префабы железа
+    public GameObject plaineIron;
+    public GameObject hillIron;
+    public GameObject beachGold;            //префабы золота
+    public GameObject plaineGold;
+    public GameObject hillGold;
+    
     [Range(0f, 1f)]                     //настройка размеров высот
     public float oceanL = 0.3f;
     [Range(0f, 1f)]     
@@ -21,6 +36,7 @@ public class Generation : MonoBehaviour
   
     public float Scale = 0.1f;          //масштаб(чем больше число тем больше отдаление)
     public float Scale2 = 0.01f;
+    public float ScaleOre = 0.2f;
     public int Height = 50;
     public int Width = 50;
 
@@ -37,20 +53,43 @@ public class Generation : MonoBehaviour
         {
             for(int q = seedX; q < seedX + Width; q++)     // x
             {
-                transform.position = a;                                                                                             //инициализация памяти
-                if(Mathf.PerlinNoise(q*Scale, i*Scale)*0.8f + Mathf.PerlinNoise(q*Scale2, i*Scale2)*0.2f < oceanL)              //Mathf.PerlinNoise() выдает от 0 до 1
+                beach = beachF;
+                plaine = plaineF;
+                hill = hillF;
+
+                if(Mathf.PerlinNoise((q + 1000f)*ScaleOre, (i + 1000f)*ScaleOre) > 0.9f)
                 {
-                    Instantiate(ocean, transform.position, Quaternion.identity);                                                    //создает копию префаба в определенных кордах          
-                }else if(Mathf.PerlinNoise(q*Scale, i*Scale)*0.8f + Mathf.PerlinNoise(q*Scale2, i*Scale2)*0.2f < seeL)
+                    beach = beachGold;
+                    plaine = plaineGold;
+                    hill = hillGold;
+                }
+                if(Mathf.PerlinNoise((q + 2000f)*ScaleOre, (i + 2000f)*ScaleOre) > 0.86f)
+                {
+                    beach = beachIron;
+                    plaine = plaineIron;
+                    hill = hillIron;
+                }
+                if(Mathf.PerlinNoise((q + 3000f)*ScaleOre, (i + 3000f)*ScaleOre) > 0.83f)
+                {
+                    beach = beachStone;
+                    plaine = plaineStone;
+                    hill = hillStone;
+                }
+
+                transform.position = a;                                                 //инициализация памяти
+                if(Noize(q, i) < oceanL)                                                //Mathf.PerlinNoise() выдает от 0 до 1
+                {
+                    Instantiate(ocean, transform.position, Quaternion.identity);        //создает копию префаба в определенных кордах          
+                }else if(Noize(q, i) < seeL)
                 {
                     Instantiate(see, transform.position, Quaternion.identity);    
-                }else if(Mathf.PerlinNoise(q*Scale, i*Scale)*0.8f + Mathf.PerlinNoise(q*Scale2, i*Scale2)*0.2f < beachL)
+                }else if(Noize(q, i) < beachL)
                 {
                     Instantiate(beach, transform.position, Quaternion.identity);    
-                }else if(Mathf.PerlinNoise(q*Scale, i*Scale)*0.8f + Mathf.PerlinNoise(q*Scale2, i*Scale2)*0.2f < plaineL)
+                }else if(Noize(q, i) < plaineL)
                 {
                     Instantiate(plaine, transform.position, Quaternion.identity);    
-                }else if(Mathf.PerlinNoise(q*Scale, i*Scale)*0.8f + Mathf.PerlinNoise(q*Scale2, i*Scale2)*0.2f < hillL)
+                }else if(Noize(q, i) < hillL)
                 {
                     Instantiate(hill, transform.position, Quaternion.identity);    
                 }else
@@ -70,7 +109,14 @@ public class Generation : MonoBehaviour
             a.y -= 1f;          //спускаемся на строку ниже
         }
     }
+
+    float Noize(int q, int i)
+    {
+    return Mathf.PerlinNoise(q*Scale, i*Scale)*0.8f + Mathf.PerlinNoise(q*Scale2, i*Scale2)*0.2f;
+    }
 }
+
+
 
 
 

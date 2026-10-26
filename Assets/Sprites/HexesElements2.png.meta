@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: 45adad633332bed438edb455de8e835b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8039163213900839543
+    second: HexesElements2_0
+  - first:
+      213: -4415027668036377019
+    second: HexesElements2_1
+  - first:
+      213: 7085098893757209223
+    second: HexesElements2_2
+  - first:
+      213: -2596731425261632577
+    second: HexesElements2_3
+  - first:
+      213: -7952146918105761690
+    second: HexesElements2_4
+  - first:
+      213: 7690366585604964385
+    second: HexesElements2_5
+  - first:
+      213: -4364262691440874591
+    second: HexesElements2_6
+  - first:
+      213: 8501720849304493587
+    second: HexesElements2_7
+  - first:
+      213: -8688052995716065720
+    second: HexesElements2_8
+  - first:
+      213: -6273215725768414169
+    second: HexesElements2_9
+  - first:
+      213: -7863316991735886858
+    second: HexesElements2_10
+  - first:
+      213: 8683201821659998941
+    second: HexesElements2_11
+  - first:
+      213: 174943451689804605
+    second: HexesElements2_12
+  - first:
+      213: 4689593078573343785
+    second: HexesElements2_13
+  - first:
+      213: 6647775353998402631
+    second: HexesElements2_14
+  - first:
+      213: 997098544353914762
+    second: HexesElements2_15
+  - first:
+      213: -1811157229334968391
+    second: HexesElements2_16
+  - first:
+      213: -2653662847764084096
+    second: HexesElements2_17
+  - first:
+      213: 5767694067454455599
+    second: HexesElements2_18
+  - first:
+      213: -4309746785940462312
+    second: HexesElements2_19
+  - first:
+      213: -6697256224377521415
+    second: HexesElements2_20
+  - first:
+      213: 1844349548529625086
+    second: HexesElements2_21
+  - first:
+      213: 2433342833606793407
+    second: HexesElements2_22
+  - first:
+      213: -8325162034601522289
+    second: HexesElements2_23
+  - first:
+      213: -9035226353146259681
+    second: HexesElements2_24
+  - first:
+      213: -4758901256845298292
+    second: HexesElements2_25
+  - first:
+      213: 2267394430034210909
+    second: HexesElements2_26
+  - first:
+      213: -4853968886738230944
+    second: HexesElements2_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 160
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HexesElements2_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1809
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9858d0876a72f6090800000000000000
+      internalID: -8039163213900839543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_1
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1809
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 546ab2d4abbaab2c0800000000000000
+      internalID: -4415027668036377019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_2
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1809
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a59e8c7e3535260800000000000000
+      internalID: 7085098893757209223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_3
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1609
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb3cf2cd68e86fbd0800000000000000
+      internalID: -2596731425261632577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_4
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1609
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668b690a28c44a190800000000000000
+      internalID: -7952146918105761690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_5
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1609
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120848f0aaba9ba60800000000000000
+      internalID: 7690366585604964385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_6
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1409
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab2d2a74360f63c0800000000000000
+      internalID: -4364262691440874591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_7
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1409
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31e9352811e2cf570800000000000000
+      internalID: 8501720849304493587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_8
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1409
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8465398e4d5dd6780800000000000000
+      internalID: -8688052995716065720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_9
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1209
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ced2ac88f01f8a0800000000000000
+      internalID: -6273215725768414169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_10
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1209
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fb0a4f8bd2efd290800000000000000
+      internalID: -7863316991735886858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_11
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1209
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddaa11d1d0ee08870800000000000000
+      internalID: 8683201821659998941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_12
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1009
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3360c574268d6200800000000000000
+      internalID: 174943451689804605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_13
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1009
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924ae75fe08c41140800000000000000
+      internalID: 4689593078573343785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_14
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1009
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 744eba98674a14c50800000000000000
+      internalID: 6647775353998402631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_15
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 809
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8f264ed7d766dd00800000000000000
+      internalID: 997098544353914762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_16
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 809
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7cb19881a7dd6e0800000000000000
+      internalID: -1811157229334968391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_17
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 809
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ace5d13bb4c2bd0800000000000000
+      internalID: -2653662847764084096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_18
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 609
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f20cf1237fa0050800000000000000
+      internalID: 5767694067454455599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_19
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 409
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8152328d124b034c0800000000000000
+      internalID: -4309746785940462312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_20
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 409
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa343092f09e03a0800000000000000
+      internalID: -6697256224377521415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_21
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 409
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef7a2c18422789910800000000000000
+      internalID: 1844349548529625086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_22
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 209
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb810ed2a68f4c120800000000000000
+      internalID: 2433342833606793407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_23
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 209
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b0206fc35177c80800000000000000
+      internalID: -8325162034601522289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_24
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 209
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f171873a08d6c9280800000000000000
+      internalID: -9035226353146259681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_25
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 9
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c857398458cf4fdb0800000000000000
+      internalID: -4758901256845298292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_26
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 9
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5073ef8837677f10800000000000000
+      internalID: 2267394430034210909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements2_27
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 9
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0616b23d30d33acb0800000000000000
+      internalID: -4853968886738230944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HexesElements2_0: -8039163213900839543
+      HexesElements2_1: -4415027668036377019
+      HexesElements2_10: -7863316991735886858
+      HexesElements2_11: 8683201821659998941
+      HexesElements2_12: 174943451689804605
+      HexesElements2_13: 4689593078573343785
+      HexesElements2_14: 6647775353998402631
+      HexesElements2_15: 997098544353914762
+      HexesElements2_16: -1811157229334968391
+      HexesElements2_17: -2653662847764084096
+      HexesElements2_18: 5767694067454455599
+      HexesElements2_19: -4309746785940462312
+      HexesElements2_2: 7085098893757209223
+      HexesElements2_20: -6697256224377521415
+      HexesElements2_21: 1844349548529625086
+      HexesElements2_22: 2433342833606793407
+      HexesElements2_23: -8325162034601522289
+      HexesElements2_24: -9035226353146259681
+      HexesElements2_25: -4758901256845298292
+      HexesElements2_26: 2267394430034210909
+      HexesElements2_27: -4853968886738230944
+      HexesElements2_3: -2596731425261632577
+      HexesElements2_4: -7952146918105761690
+      HexesElements2_5: 7690366585604964385
+      HexesElements2_6: -4364262691440874591
+      HexesElements2_7: 8501720849304493587
+      HexesElements2_8: -8688052995716065720
+      HexesElements2_9: -6273215725768414169
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
