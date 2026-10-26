@@ -1,0 +1,1001 @@
+fileFormatVersion: 2
+guid: 657768489dd338e4b9c79e6549e96d4b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6875925172651211070
+    second: HexesElements_0
+  - first:
+      213: 3264500706263329252
+    second: HexesElements_1
+  - first:
+      213: 4536028455888993734
+    second: HexesElements_2
+  - first:
+      213: -4954445028844430677
+    second: HexesElements_3
+  - first:
+      213: -2720682755118184439
+    second: HexesElements_4
+  - first:
+      213: 7802857347795120506
+    second: HexesElements_5
+  - first:
+      213: -5939326932272635255
+    second: HexesElements_6
+  - first:
+      213: 7525395947315286329
+    second: HexesElements_7
+  - first:
+      213: 4494866829035082565
+    second: HexesElements_8
+  - first:
+      213: 2273580027726160244
+    second: HexesElements_9
+  - first:
+      213: 167410954342679530
+    second: HexesElements_10
+  - first:
+      213: 1918092039452531484
+    second: HexesElements_11
+  - first:
+      213: -1457073042058485088
+    second: HexesElements_12
+  - first:
+      213: -9027276669456574335
+    second: HexesElements_13
+  - first:
+      213: 603932919595570095
+    second: HexesElements_14
+  - first:
+      213: 874962425378831477
+    second: HexesElements_15
+  - first:
+      213: -8586751706265130135
+    second: HexesElements_16
+  - first:
+      213: 4283805425257458771
+    second: HexesElements_17
+  - first:
+      213: -3401555477493480126
+    second: HexesElements_18
+  - first:
+      213: 52227823453021140
+    second: HexesElements_19
+  - first:
+      213: -1998495256891568670
+    second: HexesElements_20
+  - first:
+      213: -2431051781210835983
+    second: HexesElements_21
+  - first:
+      213: 5456507247563940782
+    second: HexesElements_22
+  - first:
+      213: -4433320146650537571
+    second: HexesElements_23
+  - first:
+      213: -4370002890436760901
+    second: HexesElements_24
+  - first:
+      213: 4310374982263126566
+    second: HexesElements_25
+  - first:
+      213: -2191091297769484719
+    second: HexesElements_26
+  - first:
+      213: -7327366226570819082
+    second: HexesElements_27
+  - first:
+      213: -1291144819503896756
+    second: HexesElements_28
+  - first:
+      213: -7196554902788178092
+    second: HexesElements_29
+  - first:
+      213: -7169055126785616930
+    second: HexesElements_30
+  - first:
+      213: 1220656530694230802
+    second: HexesElements_31
+  - first:
+      213: 5370568550431823994
+    second: HexesElements_32
+  - first:
+      213: 1299698242596289675
+    second: HexesElements_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 160
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HexesElements_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 2199
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39ba0aa3813c6f50800000000000000
+      internalID: 6875925172651211070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_1
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 2199
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e966d5a816dd4d20800000000000000
+      internalID: 3264500706263329252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_2
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 2199
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cdb35409d533fe30800000000000000
+      internalID: 4536028455888993734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_3
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1999
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa178cfe764e3bb0800000000000000
+      internalID: -4954445028844430677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_4
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1999
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90846a2f2713e3ad0800000000000000
+      internalID: -2720682755118184439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_5
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1999
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a71ff50aa61594c60800000000000000
+      internalID: 7802857347795120506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_6
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1799
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 982aafc7f95439da0800000000000000
+      internalID: -5939326932272635255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_7
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1799
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93154e92eb39f6860800000000000000
+      internalID: 7525395947315286329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_8
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1799
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5439251f099f06e30800000000000000
+      internalID: 4494866829035082565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_9
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1599
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4716a014df06d8f10800000000000000
+      internalID: 2273580027726160244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_10
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1599
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3ca114063c25200800000000000000
+      internalID: 167410954342679530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_11
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1599
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b92122c8e6e9a10800000000000000
+      internalID: 1918092039452531484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_12
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1399
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a26e44c9cf67cbe0800000000000000
+      internalID: -1457073042058485088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_13
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1399
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1889edb92bba8b280800000000000000
+      internalID: -9027276669456574335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_14
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1399
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa398a46ac9916800800000000000000
+      internalID: 603932919595570095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_15
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1199
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57cf48ca0bd742c00800000000000000
+      internalID: 874962425378831477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_16
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1199
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b669551dab5d880800000000000000
+      internalID: -8586751706265130135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_17
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1199
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35cac537652237b30800000000000000
+      internalID: 4283805425257458771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_18
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 999
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2458730c05f3bc0d0800000000000000
+      internalID: -3401555477493480126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_19
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 999
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d32f40cdec89b000800000000000000
+      internalID: 52227823453021140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_20
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 999
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2edccaff62be344e0800000000000000
+      internalID: -1998495256891568670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_21
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 799
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f3f856094b234ed0800000000000000
+      internalID: -2431051781210835983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_22
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 599
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3a46d8e6869bb40800000000000000
+      internalID: 5456507247563940782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_23
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 599
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d91ef4bb0dea972c0800000000000000
+      internalID: -4433320146650537571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_24
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 599
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bba26104681aa53c0800000000000000
+      internalID: -4370002890436760901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_25
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 399
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a3682853781db30800000000000000
+      internalID: 4310374982263126566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_26
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 399
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e0006d21ea791e0800000000000000
+      internalID: -2191091297769484719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_27
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 399
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f94d0e2d37ff4a90800000000000000
+      internalID: -7327366226570819082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_28
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 199
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4762ef90aee41ee0800000000000000
+      internalID: -1291144819503896756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_29
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 199
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ff6b4e173b02c90800000000000000
+      internalID: -7196554902788178092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_30
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 199
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed310c07856628c90800000000000000
+      internalID: -7169055126785616930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_31
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 162
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2135ac8b5a4a0f010800000000000000
+      internalID: 1220656530694230802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_32
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 0
+        width: 162
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a789f5264a7188a40800000000000000
+      internalID: 5370568550431823994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexesElements_33
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 0
+        width: 162
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8cb6216aa4790210800000000000000
+      internalID: 1299698242596289675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HexesElements_0: 6875925172651211070
+      HexesElements_1: 3264500706263329252
+      HexesElements_10: 167410954342679530
+      HexesElements_11: 1918092039452531484
+      HexesElements_12: -1457073042058485088
+      HexesElements_13: -9027276669456574335
+      HexesElements_14: 603932919595570095
+      HexesElements_15: 874962425378831477
+      HexesElements_16: -8586751706265130135
+      HexesElements_17: 4283805425257458771
+      HexesElements_18: -3401555477493480126
+      HexesElements_19: 52227823453021140
+      HexesElements_2: 4536028455888993734
+      HexesElements_20: -1998495256891568670
+      HexesElements_21: -2431051781210835983
+      HexesElements_22: 5456507247563940782
+      HexesElements_23: -4433320146650537571
+      HexesElements_24: -4370002890436760901
+      HexesElements_25: 4310374982263126566
+      HexesElements_26: -2191091297769484719
+      HexesElements_27: -7327366226570819082
+      HexesElements_28: -1291144819503896756
+      HexesElements_29: -7196554902788178092
+      HexesElements_3: -4954445028844430677
+      HexesElements_30: -7169055126785616930
+      HexesElements_31: 1220656530694230802
+      HexesElements_32: 5370568550431823994
+      HexesElements_33: 1299698242596289675
+      HexesElements_4: -2720682755118184439
+      HexesElements_5: 7802857347795120506
+      HexesElements_6: -5939326932272635255
+      HexesElements_7: 7525395947315286329
+      HexesElements_8: 4494866829035082565
+      HexesElements_9: 2273580027726160244
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
