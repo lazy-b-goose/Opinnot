@@ -43,6 +43,17 @@ public class Generation : MonoBehaviour
     int seedX;
     int seedY;
 
+    int HexsNum = 0;
+    public struct grid{                 //БД гексов
+        public GameObject Hexs;
+        public Vector2 xy;
+        public int Type;                
+        /*[тип территории(0 - ничейная)]*100 +
+        [руды(0 - нету; 1 - камень; 2 - железо; 3 - золото)] +
+        [тип рельефа(1 - океан; 2 - море; 3 - пляж; 4 - равнина; 5 - холм; 6 - гора)]                                                */
+    }
+    public grid[] HexsesData = new grid[10000];   //инициализация (значение нужно указывать вручную)            !!!
+
     Vector2 a = new Vector2(0f, 0f);
     void Start()
     {
@@ -51,7 +62,7 @@ public class Generation : MonoBehaviour
 
         for(int i = seedY; i < seedY + Height; i++)         // y
         {
-            for(int q = seedX; q < seedX + Width; q++)     // x
+            for(int q = seedX; q < seedX + Width; q++)      // x
             {
                 beach = beachF;
                 plaine = plaineF;
@@ -59,18 +70,21 @@ public class Generation : MonoBehaviour
 
                 if(Mathf.PerlinNoise((q + 1000f)*ScaleOre, (i + 1000f)*ScaleOre) > 0.9f)
                 {
+                    HexsesData[HexsNum].Type += 30;
                     beach = beachGold;
                     plaine = plaineGold;
                     hill = hillGold;
                 }
                 if(Mathf.PerlinNoise((q + 2000f)*ScaleOre, (i + 2000f)*ScaleOre) > 0.86f)
                 {
+                    HexsesData[HexsNum].Type += 20;
                     beach = beachIron;
                     plaine = plaineIron;
                     hill = hillIron;
                 }
                 if(Mathf.PerlinNoise((q + 3000f)*ScaleOre, (i + 3000f)*ScaleOre) > 0.83f)
                 {
+                    HexsesData[HexsNum].Type += 10;
                     beach = beachStone;
                     plaine = plaineStone;
                     hill = hillStone;
@@ -79,24 +93,37 @@ public class Generation : MonoBehaviour
                 transform.position = a;                                                 //инициализация памяти
                 if(Noize(q, i) < oceanL)                                                //Mathf.PerlinNoise() выдает от 0 до 1
                 {
-                    Instantiate(ocean, transform.position, Quaternion.identity);        //создает копию префаба в определенных кордах          
+                    Instantiate(ocean, transform.position, Quaternion.identity);        //создает копию префаба в определенных кордах     
+                    HexsesData[HexsNum].xy = a;  
+                    HexsesData[HexsNum].Type += 1;
                 }else if(Noize(q, i) < seeL)
                 {
                     Instantiate(see, transform.position, Quaternion.identity);    
+                    HexsesData[HexsNum].xy = a;  
+                    HexsesData[HexsNum].Type += 2;
                 }else if(Noize(q, i) < beachL)
                 {
-                    Instantiate(beach, transform.position, Quaternion.identity);    
+                    Instantiate(beach, transform.position, Quaternion.identity);  
+                    HexsesData[HexsNum].xy = a;  
+                    HexsesData[HexsNum].Type += 3;  
                 }else if(Noize(q, i) < plaineL)
                 {
-                    Instantiate(plaine, transform.position, Quaternion.identity);    
+                    Instantiate(plaine, transform.position, Quaternion.identity);   
+                    HexsesData[HexsNum].xy = a;  
+                    HexsesData[HexsNum].Type += 4; 
                 }else if(Noize(q, i) < hillL)
                 {
-                    Instantiate(hill, transform.position, Quaternion.identity);    
+                    Instantiate(hill, transform.position, Quaternion.identity);   
+                    HexsesData[HexsNum].xy = a;  
+                    HexsesData[HexsNum].Type += 5; 
                 }else
                 {
                     Instantiate(mountain, transform.position, Quaternion.identity);    
+                    HexsesData[HexsNum].xy = a;  
+                    HexsesData[HexsNum].Type += 6;
                 }
                 a.x += 1f;                                                                 //переход на клетку вправо
+                HexsNum++;
             }
             if((i-seedY)%2 == 1)
             {
