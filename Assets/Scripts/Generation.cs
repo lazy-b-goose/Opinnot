@@ -1,8 +1,9 @@
-using System;
-using System.IO;
-using System.Collections.Generic;
 using UnityEngine;
-using Random = UnityEngine.Random;      //тк 2 библиотеки конфликтуют
+using System;
+using System.Collections.Generic;
+using System.IO;
+
+using Random = UnityEngine.Random;      // тк 2 библиотеки конфликтуют
 
 [Serializable]
 public class DataHexses
@@ -17,35 +18,35 @@ public class DataHexses
 [Serializable]
 public class HexsesList
 {
-    public List<DataHexses> hexses = new List<DataHexses>();    //посредник для сохранения
+    public List<DataHexses> hexses = new List<DataHexses>();    // посредник для сохранения
 }
 
 public class Generation : MonoBehaviour
 {
-    public GameObject ocean;            //префабы высот
+    public GameObject ocean;            // префабы высот
     public GameObject see;
     public GameObject beachF;
     public GameObject plaineF;
     public GameObject hillF;
     public GameObject mountain;
 
-    GameObject beach;                   //буферные префабы
+    GameObject beach;                   // буферные префабы
     GameObject plaine;
     GameObject hill;
     int xy;
     int Type;
 
-    public GameObject beachStone;           //префабы камня
+    public GameObject beachStone;           // префабы камня
     public GameObject plaineStone;
     public GameObject hillStone;
-    public GameObject beachIron;            //префабы железа
+    public GameObject beachIron;            // префабы железа
     public GameObject plaineIron;
     public GameObject hillIron;
-    public GameObject beachGold;            //префабы золота
+    public GameObject beachGold;            // префабы золота
     public GameObject plaineGold;
     public GameObject hillGold;
     
-    [Range(0f, 1f)]                     //настройка размеров высот
+    [Range(0f, 1f)]                     // настройка размеров высот
     public float oceanL = 0.3f;
     [Range(0f, 1f)]     
     public float seeL = 0.4f;
@@ -56,7 +57,7 @@ public class Generation : MonoBehaviour
     [Range(0f, 1f)]      
     public float hillL = 0.8f;
   
-    public float Scale = 0.1f;          //масштаб(чем больше число тем больше отдаление)
+    public float Scale = 0.1f;          // масштаб(чем больше число тем больше отдаление)
     public float Scale2 = 0.01f;
     public float ScaleOre = 0.2f;
     public int Height = 50;
@@ -68,7 +69,7 @@ public class Generation : MonoBehaviour
     Vector2 a = new Vector2(0f, 0f);
     void Start()
     {
-        HexsesList dataList = new HexsesList();             //данные расположения файла
+        HexsesList dataList = new HexsesList();             // данные расположения файла
         seedX = Random.Range(0, 99999);
         seedY = Random.Range(0, 99999);
 
@@ -104,8 +105,8 @@ public class Generation : MonoBehaviour
                     hill = hillStone;
                 }
 
-                if(Noize(q, i) < oceanL){                               //Mathf.PerlinNoise() выдает от 0 до 1
-                    Instantiate(ocean, a, Quaternion.identity);         //создает копию префаба в определенных кордах     
+                if(Noize(q, i) < oceanL){                               // Mathf.PerlinNoise() выдает от 0 до 1
+                    Instantiate(ocean, a, Quaternion.identity);         // создает копию префаба в определенных кордах     
                     Type += 1;
                 }else if(Noize(q, i) < seeL){
                     Instantiate(see, a, Quaternion.identity);    
@@ -126,17 +127,17 @@ public class Generation : MonoBehaviour
                 xy = System.Math.Abs(((int)a.x)) * 100 + System.Math.Abs((int)a.y);
                 SaveHexs(xy, Type, dataList);
 
-                a.x += 1f;                                                                 //переход на клетку вправо
+                a.x += 1f;                                                                 // переход на клетку вправо
             }
             if((i-seedY)%2 == 1)
             {
-                a.x = 0f;       //сдвиг на пол клетки
+                a.x = 0f;       // сдвиг на пол клетки
             }
             else
             {
-                a.x = 0.5f;     //сдвиг на пол клетки
+                a.x = 0.5f;     // сдвиг на пол клетки
             }
-            a.y -= 1f;          //спускаемся на строку ниже
+            a.y -= 1f;          // спускаемся на строку ниже
         }
         SaveToFile(dataList);
     }

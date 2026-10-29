@@ -172,8 +172,8 @@ MonoBehaviour:
   Scale: 0.03
   Scale2: 0.15
   ScaleOre: 0.15
-  Height: 1000
-  Width: 1000
+  Height: 100
+  Width: 100
 --- !u!4 &157540431
 Transform:
   m_ObjectHideFlags: 0
