@@ -41,3 +41,7 @@ public class test : MonoBehaviour
         return hex.Type;                                        // берем значение Type
     }
 }
+/*
+Slider Num;
+Mun.value
+*/
