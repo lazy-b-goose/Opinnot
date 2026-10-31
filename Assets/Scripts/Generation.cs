@@ -67,7 +67,7 @@ public class Generation : MonoBehaviour
     int seedY;
     
     Vector2 a = new Vector2(0f, 0f);
-    void Start()
+    void Awake()
     {
         HexsesList dataList = new HexsesList();             // данные расположения файла
         seedX = Random.Range(0, 99999);
