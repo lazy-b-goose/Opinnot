@@ -124,7 +124,7 @@ public class Generation : MonoBehaviour
                     Instantiate(mountain, a, Quaternion.identity);    
                     Type += 6;
                 }
-                xy = System.Math.Abs(((int)a.x)) * 100 + System.Math.Abs((int)a.y);
+                xy = System.Math.Abs((int)a.x) * 100 + System.Math.Abs((int)a.y);
                 SaveHexs(xy, Type, dataList);
 
                 a.x += 1f;                                                                 // переход на клетку вправо
