@@ -32,17 +32,8 @@ public class HexsesClick : MonoBehaviour
     void OnMouseDown()
     {
         Panel.SetActive(true);                  // активация строительного интерфейса
-        JsonDownload();
         xy = System.Math.Abs((int)transform.position.x) * 100 + System.Math.Abs((int)transform.position.y);     // координаты для JSON
-    }
-
-    void JsonDownload(){        // перед началом работы один раз, загружает JSON 
-        string DataLocation = Path.Combine(Application.dataPath, "DataHexses.json");        // получение "ссылки" на файл
-        string json = File.ReadAllText(DataLocation);               // "запись" всего файла
-        data = JsonConvert.DeserializeObject<DataHexses>(json);     // систематизация текста
-    }
-    int FoundType(int xy){
-        Hexse hex = data.hexses.FirstOrDefault(h => h.xy == xy);    // поиск Type с подходящим xy
-        return hex.Type;                                        // берем значение Type
+        GameData.XY = xy;
+        GameData.Hexs = gameObject;
     }
 }
