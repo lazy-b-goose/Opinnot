@@ -811,6 +811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bilding
   a: 2
+  Obj: {fileID: 0}
 --- !u!1 &467790030
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,6 +1581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bilding
   a: 4
+  Obj: {fileID: 0}
 --- !u!1 &789252611
 GameObject:
   m_ObjectHideFlags: 0
@@ -2098,6 +2100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bilding
   a: 6
+  Obj: {fileID: 0}
 --- !u!1 &1185283192
 GameObject:
   m_ObjectHideFlags: 0
@@ -2382,6 +2385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bilding
   a: 1
+  Obj: {fileID: 358156819272195568, guid: 14e4dd80eb147db4a93d2e76533ea30c, type: 3}
 --- !u!1 &1304412286
 GameObject:
   m_ObjectHideFlags: 0
@@ -2812,6 +2816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bilding
   a: 5
+  Obj: {fileID: 0}
 --- !u!1 &1640913804
 GameObject:
   m_ObjectHideFlags: 0
@@ -2959,6 +2964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bilding
   a: 10
+  Obj: {fileID: 0}
 --- !u!1 &1650327461
 GameObject:
   m_ObjectHideFlags: 0
@@ -3208,6 +3214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bilding
   a: 3
+  Obj: {fileID: 0}
 --- !u!1 &1806005386
 GameObject:
   m_ObjectHideFlags: 0

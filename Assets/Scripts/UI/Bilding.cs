@@ -24,27 +24,65 @@ public class HexsesListInst
 
 public class Bilding : MonoBehaviour
 {
-    [System.Serializable]
+    [System.Serializable]       // загрузка данных
     public class Hexse
     {
         public int xy;
         public int Type;
     }
 
-    [System.Serializable]
+    [System.Serializable]       // загрузка данных
     public class DataHexses
     {
         public List<Hexse> hexses;
     }
 
-    private DataHexses data;
-    public int a;
+    private DataHexses data;    // загрузка данных
+
+    public int a;               // номер постройки
     int Type;
+    public GameObject Obj;      // требуемый объект
+    int x;
+    int y;
+     Vector3 Vect;
+
 
     public void Bild(){
-        JsonDownload();
-        Type = Found(GameData.XY) + a * 1000; 
-        Destroy(GameData.Hexs);
+        JsonDownload();                 // инициализируем данные
+
+        Vect.z = - 1.5f;
+        x = GameData.XY / 100;          // конвертируем XY в Vector2
+        y = GameData.XY % 100;
+        Vect.x = x;
+        Vect.y = -y;
+        if(y % 2 == 1){                 // смещение на пол клетки
+            Vect.x += 0.5f;
+        }
+
+        if(a == 10){            
+        }else{
+            Obj.name = GameData.XY.ToString();         // называем объект его же координатой
+        }
+        
+        Type = Found(GameData.XY);
+        if(a == 10 && Type < 10000){            // если хотят построить дорогу и дороги нет
+            Obj.name = 'R' + GameData.XY.ToString();       // называем объект его же координатой (дорога)
+            Instantiate(Obj, Vect, Quaternion.identity);  
+        }else if(a == 10 && Type > 10000){          // если хотят построить дорогу и дорога есть
+            Debug.Log("Дорога уже построена");
+        }else if(a != 10 && (Type < 1000 || (Type > 10000 && Type < 11000))){   // если хотят построить не дорогу и здания на клетке нет
+            Obj.name = GameData.XY.ToString(); 
+            Instantiate(Obj, Vect, Quaternion.identity);  
+        }else{
+            Debug.Log("Тут уже что-то построено");
+        }
+
+        if(Type < 10000){                   // если нет дороги
+            if(Type < 1000){                // если нет построек
+                Type = Type + a * 1000;     //
+            }
+        }
+        
     }
 
 
