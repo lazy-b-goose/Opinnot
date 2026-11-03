@@ -49,7 +49,7 @@ public class Bilding : MonoBehaviour
 
     public void Bild(){
         JsonDownload();                 // инициализируем данные
-
+        Debug.Log(GameData.XY);
         Vect.z = - 1.5f;
         x = GameData.XY / 100;          // конвертируем XY в Vector2
         y = GameData.XY % 100;

@@ -811,7 +811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bilding
   a: 2
-  Obj: {fileID: 0}
+  Obj: {fileID: 6200135442308415100, guid: 34e046e9ed3a2e444802a67d3f2727d3, type: 3}
 --- !u!1 &467790030
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,7 +1581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bilding
   a: 4
-  Obj: {fileID: 0}
+  Obj: {fileID: 8366172815630068857, guid: 6f23cca484cdb304d873633da0d378a5, type: 3}
 --- !u!1 &789252611
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,7 +2100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bilding
   a: 6
-  Obj: {fileID: 0}
+  Obj: {fileID: 7278822170408069732, guid: 42aaafaa2daee2f4ca4700ef2ae5055d, type: 3}
 --- !u!1 &1185283192
 GameObject:
   m_ObjectHideFlags: 0
@@ -2334,6 +2334,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1901599672}
+        m_TargetAssemblyTypeName: On, Assembly-CSharp
+        m_MethodName: Start
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1261420693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2385,7 +2397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bilding
   a: 1
-  Obj: {fileID: 358156819272195568, guid: 14e4dd80eb147db4a93d2e76533ea30c, type: 3}
+  Obj: {fileID: 1787662301773736080, guid: 66cf3fa9bdb0e42409ee9a705e861078, type: 3}
 --- !u!1 &1304412286
 GameObject:
   m_ObjectHideFlags: 0
@@ -2816,7 +2828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bilding
   a: 5
-  Obj: {fileID: 0}
+  Obj: {fileID: 338560499036997775, guid: 78728462f6fd190428857876e9a1f236, type: 3}
 --- !u!1 &1640913804
 GameObject:
   m_ObjectHideFlags: 0
@@ -2964,7 +2976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bilding
   a: 10
-  Obj: {fileID: 0}
+  Obj: {fileID: 8913912917513591689, guid: 07298a7fe72ca9b4b8a1d815e813bbf1, type: 3}
 --- !u!1 &1650327461
 GameObject:
   m_ObjectHideFlags: 0
@@ -2989,7 +3001,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650327461}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2998,7 +3010,7 @@ RectTransform:
   - {fileID: 789252612}
   - {fileID: 1884597498}
   m_Father: {fileID: 467790031}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -30, y: 0}
@@ -3214,7 +3226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bilding
   a: 3
-  Obj: {fileID: 0}
+  Obj: {fileID: 7160137597986397529, guid: 61437b19681145f4fb6f40543ca3ca51, type: 3}
 --- !u!1 &1806005386
 GameObject:
   m_ObjectHideFlags: 0

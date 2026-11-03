@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Collections;
 
 public class HexsesClick : MonoBehaviour
 {
@@ -31,9 +32,17 @@ public class HexsesClick : MonoBehaviour
 
     void OnMouseDown()
     {
-        Panel.SetActive(true);                  // активация строительного интерфейса
-        xy = System.Math.Abs((int)transform.position.x) * 100 + System.Math.Abs((int)transform.position.y);     // координаты для JSON
-        GameData.XY = xy;
-        GameData.Hexs = gameObject;
+        StartCoroutine(InterfaceOn());
+    }
+
+    IEnumerator InterfaceOn(){
+        yield return new WaitForSeconds(0.2f); 
+        if(!Input.GetMouseButton(0)){
+            Panel.SetActive(true);                  // активация строительного интерфейса
+            xy = System.Math.Abs((int)transform.position.x) * 100 + System.Math.Abs((int)transform.position.y);     // координаты для JSON
+            GameData.XY = xy;
+            GameData.Hexs = gameObject;
+            Debug.Log("корды" + xy);
+        }
     }
 }
