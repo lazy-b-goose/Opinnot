@@ -19,7 +19,7 @@ public class DataHexsesInst
 [Serializable]
 public class HexsesListInst
 {
-    public List<DataHexses> hexses = new List<DataHexses>();    // посредник для сохранения
+    public List<Bilding.Hexse> hexses = new List<Bilding.Hexse>();    // посредник для сохранения
 }
 
 public class Bilding : MonoBehaviour
@@ -48,6 +48,7 @@ public class Bilding : MonoBehaviour
 
 
     public void Bild(){
+
         JsonDownload();                 // инициализируем данные
         Debug.Log(GameData.XY);
         Vect.z = - 1.5f;
@@ -65,24 +66,21 @@ public class Bilding : MonoBehaviour
         }
         
         Type = Found(GameData.XY);
-        if(a == 10 && Type < 10000){            // если хотят построить дорогу и дороги нет
-            Obj.name = 'R' + GameData.XY.ToString();       // называем объект его же координатой (дорога)
+        if(a == 10 && Type < 10000){                        // если хотят построить дорогу и дороги нет
+            Obj.name = 'R' + GameData.XY.ToString();        // называем объект его же координатой (дорога)
             Instantiate(Obj, Vect, Quaternion.identity);  
-        }else if(a == 10 && Type > 10000){          // если хотят построить дорогу и дорога есть
+            Type += 10000;                                  // записываем дорогу в клетку
+        }else if(a == 10 && Type > 10000){                  // если хотят построить дорогу и дорога есть
             Debug.Log("Дорога уже построена");
         }else if(a != 10 && (Type < 1000 || (Type > 10000 && Type < 11000))){   // если хотят построить не дорогу и здания на клетке нет
             Obj.name = GameData.XY.ToString(); 
-            Instantiate(Obj, Vect, Quaternion.identity);  
+            Instantiate(Obj, Vect, Quaternion.identity);
+            Type += a * 1000; 
         }else{
             Debug.Log("Тут уже что-то построено");
         }
-
-        if(Type < 10000){                   // если нет дороги
-            if(Type < 1000){                // если нет построек
-                Type = Type + a * 1000;     //
-            }
-        }
-        
+        SaveHexs(GameData.XY, Type);
+        SaveToFile();
     }
 
 
@@ -96,5 +94,26 @@ public class Bilding : MonoBehaviour
     int Found(int xy){
         Hexse hex = data.hexses.FirstOrDefault(h => h.xy == xy);    // поиск Type с подходящим xy
         return hex.Type;                                        // берем значение Type
+    }
+
+    public void SaveHexs(int xy, int newType){
+        Hexse hex = data.hexses.FirstOrDefault(h => h.xy == xy);
+
+        if (hex == null)
+        {
+            hex = new Hexse();
+            hex.xy = xy;
+            data.hexses.Add(hex);
+        }
+
+        hex.Type = newType;
+    }
+
+    public void SaveToFile(){
+        string DataLocation = Path.Combine(Application.dataPath, "DataHexses.json");
+
+        string json = JsonConvert.SerializeObject(data, Formatting.Indented);
+
+        File.WriteAllText(DataLocation, json);
     }
 }
