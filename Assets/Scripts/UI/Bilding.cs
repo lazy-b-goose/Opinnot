@@ -68,14 +68,38 @@ public class Bilding : MonoBehaviour
         Type = Found(GameData.XY);
         if(a == 10 && Type < 10000){                        // если хотят построить дорогу и дороги нет
             Obj.name = 'R' + GameData.XY.ToString();        // называем объект его же координатой (дорога)
+            Vect.z = - 1f;                                  // чтобы дорога была под зданием
             Instantiate(Obj, Vect, Quaternion.identity);  
+            Vect.z = - 1.5f;
             Type += 10000;                                  // записываем дорогу в клетку
         }else if(a == 10 && Type > 10000){                  // если хотят построить дорогу и дорога есть
             Debug.Log("Дорога уже построена");
-        }else if(a != 10 && (Type < 1000 || (Type > 10000 && Type < 11000))){   // если хотят построить не дорогу и здания на клетке нет
-            Obj.name = GameData.XY.ToString(); 
-            Instantiate(Obj, Vect, Quaternion.identity);
-            Type += a * 1000; 
+        }else if(a < 10 && (Type < 1000 || (Type > 10000 && Type < 11000))){   // если хотят построить не дорогу и здания на клетке нет
+            if (a == 3){
+                if(Type % 100 > 9){
+                    Obj.name = GameData.XY.ToString(); 
+                    Instantiate(Obj, Vect, Quaternion.identity);
+                    Type += a * 1000; 
+                }else{Debug.Log("Шахту можно построить только на месторождении");}
+            }else if(a == 4){
+                if(Type % 10 == 4){
+                    Obj.name = GameData.XY.ToString(); 
+                    Instantiate(Obj, Vect, Quaternion.identity);
+                    Type += a * 1000; 
+                }else{Debug.Log("Ферму можно построить только на равнине");}
+            }else{
+                Obj.name = GameData.XY.ToString(); 
+                Instantiate(Obj, Vect, Quaternion.identity);
+                Type += a * 1000; 
+            }
+        }else if(a == 11){
+                Destroy(GameObject.Find(GameData.XY.ToString() + "(Clone)"));
+                Debug.Log("Удаление здания");
+                Type = Type / 10000 + Type % 100;
+        }else if(a == 12){
+                Destroy(GameObject.Find("R" + GameData.XY.ToString() + "(Clone)"));
+                Debug.Log("Удаление дороги");
+                Type = Type % 1000;
         }else{
             Debug.Log("Тут уже что-то построено");
         }
