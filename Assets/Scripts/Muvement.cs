@@ -8,6 +8,7 @@ public class Muvement : MonoBehaviour
     Vector2 MouseXYDelta;
     Vector3 a;
     public Slider zoom;
+    float Sensa = 0.00505f;
     
 
     float Sensitivity;
@@ -15,7 +16,7 @@ public class Muvement : MonoBehaviour
     void Update(){
         Camera cam = GetComponent<Camera>();
         cam.orthographicSize = zoom.value*20f + 1f;         // задаем размер камеры
-        Sensitivity = cam.orthographicSize * 0.00496f;      // задаем чувствительность
+        Sensitivity = cam.orthographicSize * Sensa;      // задаем чувствительность
 
         if(Input.GetMouseButtonDown(0)){
             MouseXY = Input.mousePosition;  // записываем положение мыши при нажатии
