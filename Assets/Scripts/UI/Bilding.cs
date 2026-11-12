@@ -68,8 +68,9 @@ public class Bilding : MonoBehaviour
         if(a == 10 && Type < 10000){                        // если хотят построить дорогу и дороги нет
             Obj.name = 'R' + GameData.XY.ToString();        // называем объект его же координатой (дорога)
             Vect.z = - 1f;                                  // чтобы дорога была под зданием
-            Instantiate(Obj, Vect, Quaternion.identity);  
+            Instantiate(Obj, Vect, Quaternion.identity);                                                        // строительство дороги
             Vect.z = - 1.5f;
+            GameData.Gold -= 100;
             Type += 10000;                                  // записываем дорогу в клетку
         }else if(a == 10 && Type > 10000){                  // если хотят построить дорогу и дорога есть
             Debug.Log("Дорога уже построена");
@@ -93,11 +94,9 @@ public class Bilding : MonoBehaviour
             }
         }else if(a == 11){
                 Destroy(GameObject.Find(GameData.XY.ToString() + "(Clone)"));
-                Debug.Log("Удаление здания");
                 Type = Type / 10000 + Type % 100;
         }else if(a == 12){
                 Destroy(GameObject.Find("R" + GameData.XY.ToString() + "(Clone)"));
-                Debug.Log("Удаление дороги");
                 Type = Type % 1000;
         }else{
             Debug.Log("Тут уже что-то построено");
