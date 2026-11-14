@@ -9,20 +9,6 @@ public class HexsesClick : MonoBehaviour
 {
     GameObject Panel;
 
-    [System.Serializable]
-    public class Hexse
-    {
-        public int xy;
-        public int Type;
-    }
-
-    [System.Serializable]
-    public class DataHexses
-    {
-        public List<Hexse> hexses;
-    }
-
-    private DataHexses data;
     int xy;
     int Type;
 

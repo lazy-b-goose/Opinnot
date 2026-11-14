@@ -5,23 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.IO;
 
-[Serializable]
-public class DataHexsesInst
-{
-    public int xy;
-    public int Type;
- /* [постройка(0 - нету; 1 - дом; 2 - завод; 3 - шахта; 4 - поле; 5 - окоп; 6 - авиапорт; 10 - дорога)] * 1000 + 
-    [тип территории(0 - ничейная)]*100 +
-    [руды(0 - нету; 1 - камень; 2 - железо; 3 - золото)] +
-    [тип рельефа(1 - океан; 2 - море; 3 - пляж; 4 - равнина; 5 - холм; 6 - гора)]    */
-}
-
-[Serializable]
-public class HexsesListInst
-{
-    public List<Bilding.Hexse> hexses = new List<Bilding.Hexse>();    // посредник для сохранения
-}
-
 public class Bilding : MonoBehaviour
 {
     [System.Serializable]       // загрузка данных
@@ -70,7 +53,6 @@ public class Bilding : MonoBehaviour
             Vect.z = - 1f;                                  // чтобы дорога была под зданием
             Instantiate(Obj, Vect, Quaternion.identity);                                                        // строительство дороги
             Vect.z = - 1.5f;
-            GameData.Gold -= 100;
             Type += 10000;                                  // записываем дорогу в клетку
         }else if(a == 10 && Type > 10000){                  // если хотят построить дорогу и дорога есть
             Debug.Log("Дорога уже построена");

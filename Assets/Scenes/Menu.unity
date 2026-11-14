@@ -265,6 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea65eec4f6430f84183452572b834ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewGame
+  Loading: {fileID: 1330179622}
 --- !u!1 &132661647
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,6 +365,7 @@ RectTransform:
   - {fileID: 48538741}
   - {fileID: 1653649974}
   - {fileID: 149839341}
+  - {fileID: 1330179623}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -454,7 +456,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 149839343}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 149839345}
+        m_TargetAssemblyTypeName: ExitGame, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &149839343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,9 +516,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 149839340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8f178eab65da2e49ac6c46010c9edf0, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c152a870e0dc674db28309b59318a6a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Exit
+  m_EditorClassIdentifier: Assembly-CSharp::ExitGame
 --- !u!1 &665938805
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,7 +876,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1237615464}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1237615466}
+        m_TargetAssemblyTypeName: Resume, Assembly-CSharp
+        m_MethodName: ScGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1237615464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -913,6 +939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec772ddf22d519c43a02163c5a1af30f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Resume
+  Loading: {fileID: 1330179622}
 --- !u!1 &1281090650
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,6 +1019,78 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1330179622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1330179623}
+  - component: {fileID: 1330179625}
+  - component: {fileID: 1330179624}
+  m_Layer: 5
+  m_Name: Loading
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1330179623
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330179622}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 132661651}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1000, y: 1000}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1330179624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330179622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RawImage
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: 76a55ff670977ec479ae42e427e9cc32, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1330179625
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330179622}
+  m_CullTransparentMesh: 1
 --- !u!1 &1441829341
 GameObject:
   m_ObjectHideFlags: 0

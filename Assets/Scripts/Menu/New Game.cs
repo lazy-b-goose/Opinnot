@@ -3,8 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class NewGame : MonoBehaviour
 {
+    public GameObject Loading;
+
     public void ScGame(){
-        GameData.Generic = true;
-        SceneManager.LoadScene("Game", LoadSceneMode.Single);
+        Loading.SetActive(true);    // включение экрана загрузки
+        GameData.Generic = true;    // отмечаем что нужно генерировать мир
+        SceneManager.LoadScene("Game", LoadSceneMode.Single);   // переключаемся на сцену игры
         }
 }
