@@ -1,0 +1,11 @@
+{
+    "Resources": [
+        {
+            "Gold": 1000,
+            "Iron": 950,
+            "Stone": 810,
+            "Food": 1000,
+            "People": 1000
+        }
+    ]
+}
