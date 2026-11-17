@@ -25,7 +25,7 @@ public class HexsesClick : MonoBehaviour
         yield return new WaitForSeconds(0.14f);     // даем время отпустить кнопку
         if(!Input.GetMouseButton(0)){               // если ЛКМ не зажата
             Panel.SetActive(true);                  // активация строительного интерфейса
-            xy = System.Math.Abs((int)transform.position.x) * 100 + System.Math.Abs((int)transform.position.y);     // координаты для JSON
+            xy = 1000000 + System.Math.Abs((int)transform.position.x) * 100 + System.Math.Abs((int)transform.position.y);     // координаты для JSON
             GameData.XY = xy;                       // передаем данные для строительства            
         }
     }

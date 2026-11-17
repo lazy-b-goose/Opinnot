@@ -812,6 +812,7 @@ MonoBehaviour:
   ScaleOre: 0.15
   Height: 100
   Width: 100
+  k: 10000
 --- !u!4 &157540431
 Transform:
   m_ObjectHideFlags: 0

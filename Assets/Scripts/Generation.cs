@@ -76,6 +76,8 @@ public class Generation : MonoBehaviour
 
     int seedX;
     int seedY;
+    int OneOre;
+    public int k = 500;
     
     Vector3 a = new Vector3(0f, 0f, 0f);
 
@@ -114,22 +116,24 @@ public class Generation : MonoBehaviour
                     hill = hillF;
                     xy = 0;
                     Type = 0;
+                    OneOre = Random.Range(0, k);
+                    Debug.Log(OneOre);
 
-                    if(Mathf.PerlinNoise((q + 1000f)*ScaleOre, (i + 1000f)*ScaleOre) > 0.9f)
+                    if(Mathf.PerlinNoise((q + 1000f)*ScaleOre, (i + 1000f)*ScaleOre) > 0.9f || OneOre < 105)
                     {
                         Type += 30;
                         beach = beachGold;
                         plaine = plaineGold;
                         hill = hillGold;
                     }
-                    if(Mathf.PerlinNoise((q + 2000f)*ScaleOre, (i + 2000f)*ScaleOre) > 0.86f)
+                    if(Mathf.PerlinNoise((q + 2000f)*ScaleOre, (i + 2000f)*ScaleOre) > 0.86f || OneOre < 90)
                     {
                         Type += 20;
                         beach = beachIron;
                         plaine = plaineIron;
                         hill = hillIron;
                     }
-                    if(Mathf.PerlinNoise((q + 3000f)*ScaleOre, (i + 3000f)*ScaleOre) > 0.83f)
+                    if(Mathf.PerlinNoise((q + 3000f)*ScaleOre, (i + 3000f)*ScaleOre) > 0.83f || OneOre < 60)
                     {
                         Type += 10;
                         beach = beachStone;
@@ -156,7 +160,7 @@ public class Generation : MonoBehaviour
                         Instantiate(mountain, a, Quaternion.identity);    
                         Type += 6;
                     }
-                    xy = System.Math.Abs((int)a.x) * 100 + System.Math.Abs((int)a.y);
+                    xy = 1000000 + System.Math.Abs((int)a.x) * 100 + System.Math.Abs((int)a.y);
                     SaveHexs(xy, Type, dataList);
 
                     a.x += 1f;                                                                 // переход на клетку вправо
@@ -188,7 +192,7 @@ public class Generation : MonoBehaviour
                     plaine = plaineF;
                     hill = hillF;
                     a.z = 0;
-                    xy = System.Math.Abs((int)a.x) * 100 + System.Math.Abs((int)a.y);
+                    xy = 1000000 + System.Math.Abs((int)a.x) * 100 + System.Math.Abs((int)a.y);
                     Type = Found(xy);  // ищем тип гекса
 
                     if((Type/10)%10 == 3)       // проверяем наличие руд

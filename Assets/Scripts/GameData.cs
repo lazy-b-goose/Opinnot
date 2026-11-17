@@ -8,7 +8,7 @@ using System.IO;
 public class GameData : MonoBehaviour
 {
     public static int XY;
-    public static bool Generic = false;
+    public static bool Generic = true;
     public static int Gold;
     public static int Iron;
     public static int Stone;
@@ -49,7 +49,7 @@ public class GameData : MonoBehaviour
             GameData.Iron = 200;
             GameData.Stone = 500;
             GameData.Food = 1000;
-            GameData.People = 100;
+            GameData.People = 10;
         }
     }
 

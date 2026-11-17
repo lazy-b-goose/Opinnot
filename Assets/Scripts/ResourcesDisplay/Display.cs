@@ -15,6 +15,6 @@ public class Display : MonoBehaviour
         Iron.text = GameData.Iron.ToString();
         Stone.text = GameData.Stone.ToString();
         Food.text = GameData.Food.ToString();
-        People.text = GameData.People.ToString();
+        People.text = GameData.People.ToString() + '0';
     }
 }
