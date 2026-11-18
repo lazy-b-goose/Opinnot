@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: LocalizationTable1_en-US
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: 906f296d7fe276e4ba6f1c6c5ca9532b, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 8925032448
+    m_Localized: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130558629326848
+    m_Localized: New Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130824321708032
+    m_Localized: Setting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130929321914368
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 134543041966080
+    m_Localized: Exit to Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 134846646661120
+    m_Localized: Exit Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137486831005696
+    m_Localized: Home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137555047165952
+    m_Localized: Road
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137827022614528
+    m_Localized: Airport
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137793564651520
+    m_Localized: Trench
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137775613030400
+    m_Localized: Farm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137752519192576
+    m_Localized: Mine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137724975198208
+    m_Localized: Factory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138424748683264
+    m_Localized: Destroy the Road
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138231483543552
+    m_Localized: Destroy the Building
+    m_Metadata:
+      m_Items: []
+  - m_Id: 151862275289088
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

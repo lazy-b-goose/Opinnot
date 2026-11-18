@@ -14,6 +14,7 @@ public class GameData : MonoBehaviour
     public static int Stone;
     public static int Food;
     public static int People;
+    public static string Langage;
 
     [System.Serializable]       // загрузка данных
     public class Resource
@@ -23,6 +24,7 @@ public class GameData : MonoBehaviour
         public int Stone;
         public int Food;
         public int People; 
+        public string Langage;
     }
     
     [System.Serializable]       // загрузка данных
@@ -43,6 +45,7 @@ public class GameData : MonoBehaviour
         GameData.Stone = res.Stone;
         GameData.Food = res.Food;
         GameData.People = res.People;
+        GameData.Langage = res.Langage;
 
         if(Generic){
             GameData.Gold = 500;

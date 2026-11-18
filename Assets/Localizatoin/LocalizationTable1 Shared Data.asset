@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: LocalizationTable1 Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: LocalizationTable1
+  m_TableCollectionNameGuidString: 906f296d7fe276e4ba6f1c6c5ca9532b
+  m_Entries:
+  - m_Id: 8925032448
+    m_Key: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130558629326848
+    m_Key: NewGame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130824321708032
+    m_Key: Setting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130929321914368
+    m_Key: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 134543041966080
+    m_Key: ExittoMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 134846646661120
+    m_Key: ExitGame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137486831005696
+    m_Key: Home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137555047165952
+    m_Key: Road
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137724975198208
+    m_Key: Factory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137752519192576
+    m_Key: Mine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137775613030400
+    m_Key: Farm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137793564651520
+    m_Key: Trench
+    m_Metadata:
+      m_Items: []
+  - m_Id: 137827022614528
+    m_Key: Airport
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138231483543552
+    m_Key: DestroyhtheBuilding
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138424748683264
+    m_Key: 'DestroytheRoad
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 151862275289088
+    m_Key: Language
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 6715262186649026586
+  references:
+    version: 2
+    RefIds:
+    - rid: 6715262186649026586
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1794998433949

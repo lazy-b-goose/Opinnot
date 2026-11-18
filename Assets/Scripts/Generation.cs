@@ -117,7 +117,6 @@ public class Generation : MonoBehaviour
                     xy = 0;
                     Type = 0;
                     OneOre = Random.Range(0, k);
-                    Debug.Log(OneOre);
 
                     if(Mathf.PerlinNoise((q + 1000f)*ScaleOre, (i + 1000f)*ScaleOre) > 0.9f || OneOre < 105)
                     {

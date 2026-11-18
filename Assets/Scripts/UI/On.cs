@@ -10,7 +10,11 @@ public class On : MonoBehaviour
     }
 
     IEnumerator Off(){
-        yield return new WaitForSeconds(0.1f);  // ждём чтобы задний гекс не открывал панель опять
+        yield return new WaitForSeconds(0.05f);  // ждём чтобы задний гекс не открывал панель опять
         Panel.SetActive(false);
+        GameObject BackLight = GameObject.Find("BackLighting");
+        Vector3 pos = BackLight.transform.position;
+        pos.z = 1f;
+        BackLight.transform.position = pos;
     }
 }
