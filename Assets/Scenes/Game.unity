@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 812038}
   - component: {fileID: 812037}
   - component: {fileID: 812036}
+  - component: {fileID: 812039}
   m_Layer: 5
   m_Name: Setting
   m_TagString: Untagged
@@ -201,7 +202,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 812037}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 812039}
+        m_TargetAssemblyTypeName: SettingGame, Assembly-CSharp
+        m_MethodName: Setting
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &812037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +253,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812034}
   m_CullTransparentMesh: 1
+--- !u!114 &812039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cdfe26328cc5d4c863cbd345942201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SettingGame
+  Loading: {fileID: 976236134}
 --- !u!1 &35786774
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,7 +786,6 @@ GameObject:
   - component: {fileID: 157540431}
   - component: {fileID: 157540430}
   - component: {fileID: 157540433}
-  - component: {fileID: 157540434}
   m_Layer: 0
   m_Name: Server
   m_TagString: Untagged
@@ -845,18 +870,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EscMenu
   Esc: {fileID: 1617291622}
---- !u!114 &157540434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157540429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15a41ffbfb4a9124ea6e12ae819f476d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameData
 --- !u!1 &226378682
 GameObject:
   m_ObjectHideFlags: 0
@@ -6003,7 +6016,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 6, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1361434823
 MonoBehaviour:
@@ -6121,7 +6134,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:906f296d7fe276e4ba6f1c6c5ca9532b
     m_TableEntryReference:
-      m_KeyId: 130558629326848
+      m_KeyId: 134846646661120
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

@@ -1033,6 +1033,7 @@ GameObject:
   - component: {fileID: 1281090653}
   - component: {fileID: 1281090652}
   - component: {fileID: 1281090651}
+  - component: {fileID: 1281090654}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1101,6 +1102,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1281090654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281090650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15a41ffbfb4a9124ea6e12ae819f476d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameData
 --- !u!1 &1330179622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1434,7 +1447,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1653649976}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1653649978}
+        m_TargetAssemblyTypeName: Setting, Assembly-CSharp
+        m_MethodName: Settings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1653649976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1485,6 +1510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1dd04f9518a1bb44a406c87d1fcc030, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Setting
+  Loading: {fileID: 1330179622}
 --- !u!1 &1703064555
 GameObject:
   m_ObjectHideFlags: 0

@@ -26,6 +26,7 @@ public class ExittoMenu : MonoBehaviour
         data.Stone = GameData.Stone;
         data.Food = GameData.Food;
         data.People = GameData.People;
+        data.Langage = GameData.Langage;
 
         dataList.Resources.Add(data);
     }

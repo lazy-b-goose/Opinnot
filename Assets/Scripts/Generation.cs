@@ -107,6 +107,12 @@ public class Generation : MonoBehaviour
             seedX = Random.Range(0, 99999);
             seedY = Random.Range(0, 99999);
 
+            GameData.Gold = 500;
+            GameData.Iron = 200;
+            GameData.Stone = 500;
+            GameData.Food = 1000;
+            GameData.People = 10;
+
             for(int i = seedY; i < seedY + Height; i++)         // y
             {
                 for(int q = seedX; q < seedX + Width; q++)      // x

@@ -2,15 +2,24 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
+using TMPro;
+
 public class Language : MonoBehaviour
 {
+    public TMP_Dropdown dropdown;
+
     IEnumerator Start()
     {
         yield return LocalizationSettings.InitializationOperation;
-
-        if (!string.IsNullOrEmpty(GameData.Langage))
-        {
-            SetLanguage(GameData.Langage);
+        SetLanguage(GameData.Langage);
+        
+        switch(GameData.Langage){
+            case "be-BY": dropdown.SetValueWithoutNotify(0);
+                break;
+            case "en-US": dropdown.SetValueWithoutNotify(1);
+                break;
+            case "ru-RU": dropdown.SetValueWithoutNotify(2);
+                break;
         }
     }
 
@@ -26,22 +35,6 @@ public class Language : MonoBehaviour
                 GameData.Langage = "ru-RU";
                 break;
         }
-    }
-
-    public void SetBelarusian()
-    {
-        SetLanguage("be");
-        GameData.Langage = "be";
-    }
-    public void SetRussian()
-    {
-        SetLanguage("ru");
-        GameData.Langage = "ru";
-    }
-    public void SetEnglish()
-    {
-        SetLanguage("en");
-        GameData.Langage = "en";
     }
     
     public void SetLanguage(string code){

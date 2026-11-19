@@ -1,16 +1,13 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Setting : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public GameObject Loading;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void Settings(){
+        Loading.SetActive(true);
+        GameData.InSettingGame = false;
+        SceneManager.LoadScene("Setting", LoadSceneMode.Single);
     }
 }

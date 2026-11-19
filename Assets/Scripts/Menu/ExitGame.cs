@@ -12,6 +12,7 @@ public class DataResources
     public int Stone;
     public int Food;
     public int People; 
+    public string Langage;
 }
 
 [Serializable]
@@ -39,6 +40,7 @@ public class ExitGame : MonoBehaviour
         data.Stone = GameData.Stone;
         data.Food = GameData.Food;
         data.People = GameData.People;
+        data.Langage = GameData.Langage;
 
         dataList.Resources.Add(data);
     }

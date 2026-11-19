@@ -1,11 +1,12 @@
 {
     "Resources": [
         {
-            "Gold": 1000,
-            "Iron": 950,
-            "Stone": 810,
-            "Food": 1000,
-            "People": 1000
+            "Gold": 0,
+            "Iron": 0,
+            "Stone": 0,
+            "Food": 0,
+            "People": 0,
+            "Langage": "ru-RU"
         }
     ]
 }
