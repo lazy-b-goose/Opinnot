@@ -12,6 +12,7 @@ public class DataHexsesGen
 {
     public int xy;
     public int Type;
+    public string ppl;
  /* [постройка(0 - нету; 1 - дом; 2 - завод; 3 - шахта; 4 - поле; 5 - окоп; 6 - авиапорт; 10 - дорога)] 
     [тип территории(0 - ничейная)]
     [руды(0 - нету; 1 - камень; 2 - железо; 3 - золото)]
@@ -38,6 +39,7 @@ public class Generation : MonoBehaviour
     GameObject hill;
     int xy;
     int Type;
+    string ppl;
 
     public GameObject beachStone;           // префабы камня
     public GameObject plaineStone;
@@ -86,6 +88,7 @@ public class Generation : MonoBehaviour
     {
         public int xy;
         public int Type;
+        public string ppl;
     }
 
     [System.Serializable]       // загрузка данных
@@ -297,6 +300,7 @@ public class Generation : MonoBehaviour
         DataHexsesGen data = new DataHexsesGen();
         data.xy = xy;
         data.Type = Type;
+        data.ppl = " ";
         dataList.hexses.Add(data);
     }
 
