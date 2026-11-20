@@ -50,6 +50,45 @@ public class Home : MonoBehaviour
         
     }
 
+    
+
+    public void Sphere0(int XY, string ppl)         // [
+    {
+        int p = ppl.Length;
+        int pplHome = int.Parse(ppl.Substring(p - 2, p - 1));   // Количество безработных
+
+
+
+        int k = XY + 1;
+
+        int a = (Found(k) / 1000) % 10;                         // Тип здания
+        if (a == 2 || a == 3 || a == 4 || a == 6)           // Проверка является ли гекс 'k' рабочим местом
+        {
+            int l = FoundPpl(k).Length;
+            int pplWork = int.Parse(ppl.Substring(l - 2, l - 1));   //Количество рабочих мест
+
+            if (pplHome >= pplWork)                 // Если рабочих мест меньше чем безработных
+            {
+                pplHome -= pplWork;                 // Отнимаем от безработных рабочие места
+
+                string w = FoundPpl(k);             // Берём ppl 
+                w[l - 1] = 0;
+                w[l - 2] = 0;
+                SaveHexs(k, w);                     // Записываем кол - во вакансий 0
+                return
+            }
+            else
+            {
+
+            }
+        }
+
+    }
+    public void Sphere1(int XY)         // x дробный  ]
+    {
+
+    }
+
     void JsonDownload()
     {
         string DataLocation = Path.Combine(Application.dataPath, "DataHexses.json");        // получение "ссылки" на файл
@@ -60,6 +99,12 @@ public class Home : MonoBehaviour
     {
         HexseHome hex = data.hexses.FirstOrDefault(h => h.xy == xy);    // поиск Type с подходящим xy
         return hex.Type;                                        // берем значение Type
+    }
+
+    string FoundPpl(int xy)
+    {
+        HexseHome hex = data.hexses.FirstOrDefault(h => h.xy == xy);    // поиск Type с подходящим xy
+        return hex.ppl;                                        // берем значение Type
     }
 
     public void SaveHexs(int xy, string newType)
@@ -83,35 +128,5 @@ public class Home : MonoBehaviour
         string json = JsonConvert.SerializeObject(data, Formatting.Indented);
 
         File.WriteAllText(DataLocation, json);
-    }
-
-    public void Sphere0(int XY, string ppl)         // [
-    {
-        int pplHome = 100;
-        int pplWorkDelt = 0;
-        int a = (Found(XY + 1) / 1000) % 10;
-        if (a == 2 || a == 3 || a == 4 || a == 6)
-        {
-            switch (a)
-            {
-                case 2: pplWorkDelt = 100; break;
-                case 3: pplWorkDelt = 300; break;
-                case 4: pplWorkDelt = 30; break;
-                case 6: pplWorkDelt = 50; break;
-            }
-            if(pplHome >= pplWorkDelt)
-            {
-                pplHome -= pplWorkDelt;
-            }
-            else
-            {
-
-            }
-        }
-
-    }
-    public void Sphere1(int XY)         // x дробный  ]
-    {
-
     }
 }
