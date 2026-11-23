@@ -7,7 +7,7 @@ using System.IO;
 
 public class Home : MonoBehaviour
 {
-    [System.Serializable]       // загрузка данных
+    [System.Serializable]
     public class HexseHome
     {
         public int xy;
@@ -15,97 +15,176 @@ public class Home : MonoBehaviour
         public string ppl;
     }
 
-    [System.Serializable]       // загрузка данных
+    [System.Serializable]
     public class DataHexsesHome
     {
         public List<HexseHome> hexses;
     }
 
-    private DataHexsesHome data;    // загрузка данных
+    private DataHexsesHome data;
 
     int XY;
+    string XYst;
+    bool T;
     string ppl;
 
     Vector2 a;
 
     void Start()
     {
-        a = gameObject.transform.position;
         XY = 1000000 + System.Math.Abs((int)a.x) * 100 + System.Math.Abs((int)a.y);
+        XYst = XY.ToString();
 
         JsonDownload();
 
+        a = gameObject.transform.position;
         if ((a.x / 1) == 0)     
         {
-            //Sphere0(XY);
+            T = true;
         }
         else
         {
-            //Sphere1(XY);
+            T = false;
         }
-    }
 
-    void Update()
-    {
-        
+        Sphere0(XY, T, XYst);
     }
 
     
 
-    public void Sphere0(int XY, string ppl)         // [
+
+
+    //                                   [
+    public void Sphere0(int HomeXY, bool T, string XY)
     {
-        int p = ppl.Length;
-        int pplHome = int.Parse(ppl.Substring(p - 2, p - 1));   // Количество безработных
+        int n = FoundPpl(HomeXY).Length;
+        int pplHome = int.Parse(FoundPpl(HomeXY).Substring(n - 2, n - 1));           // РєРѕР»РёС‡РµСЃС‚РІРѕ Р±РµР·СЂР°Р±РѕС‚РЅС‹С…
+
+        if(pplHome == 0){
+            SearchWork(HomeXY, T, pplHome, XY);
+        }
+    }
 
 
 
-        int k = XY + 1;
+    void SearchWork(int HomeXY, bool T, int pplHome, string XY){
+        SphereWork(HomeXY, T, pplHome, XY);
+    }
 
-        int a = (Found(k) / 1000) % 10;                         // Тип здания
-        if (a == 2 || a == 3 || a == 4 || a == 6)           // Проверка является ли гекс 'k' рабочим местом
+
+
+    void SphereWork(int HomeXY, bool T, int pplHome, string XY){// РµСЃС‚СЊ Р»Рё РІРѕРєСЂСѓРі СЂР°Р±РѕС‡РёРµ Р·РґР°РЅРёСЏ
+        if(pplHome != 0){
+            WorkHexs(HomeXY + 1, pplHome, XY);
+            WorkHexs(HomeXY - 1, pplHome, XY);
+            WorkHexs(HomeXY + 100, pplHome, XY);
+            WorkHexs(HomeXY - 100, pplHome, XY);
+        }
+        if(T && pplHome != 0){
+            WorkHexs(HomeXY + 99, pplHome, XY);
+            WorkHexs(HomeXY - 101, pplHome, XY);
+        }
+        if(!T && pplHome != 0){
+            WorkHexs(HomeXY + 101, pplHome, XY);
+            WorkHexs(HomeXY - 99, pplHome, XY);
+        }
+    }
+
+
+
+    //       РєРѕРѕСЂРґРёРЅР°С‚Р° РіРµРєСЃР°|РєРѕР»-РІРѕ Р±РµР·СЂР°Р±РѕС‚РЅС‹С…
+    void WorkHexs(int WorkXY, int pplHome, string XY){// РµСЃС‚СЊ Р»Рё РІ РіРµРєСЃРµ СЂР°Р±РѕС‡РёРµ Р·РґР°РЅРёСЏ
+        int a = (Found(WorkXY) / 1000) % 10;                                 // С‚РёРї Р·РґР°РЅРёСЏ
+        if (a == 2 || a == 3 || a == 4 || a == 6)                       // РёС‰РµРј Р·РґР°РЅРёСЏ СЂР°Р±РѕС‚С‹
         {
-            int l = FoundPpl(k).Length;
-            int pplWork = int.Parse(ppl.Substring(l - 2, l - 1));   //Количество рабочих мест
+            int n = FoundPpl(WorkXY).Length;
+            string FpplWork = FoundPpl(WorkXY);
+            int pplWork = int.Parse(FpplWork.Substring(n - 2, n - 1));         // РєРѕР»-РІРѕ РІР°РєР°РЅСЃРёР№
 
-            if (pplHome >= pplWork)                 // Если рабочих мест меньше чем безработных
+            if (pplHome >= pplWork)                                     // РµСЃР»Рё Р±РµР·СЂР°Р±РѕС‚РЅС‹С… Р±РѕР»СЊС€Рµ С‡РµРј РІР°РєР°РЅСЃРёР№
             {
-                pplHome -= pplWork;                 // Отнимаем от безработных рабочие места
+                pplHome -= pplWork;                                     // РєРѕР»-РІРѕ Р±РµР·СЂР°Р±РѕС‚РЅС‹С… СѓРјРµРЅСЊС€Р°РµС‚СЃСЏ РЅР° РєРѕР»-РІРѕ РІР°РєР°РЅСЃРёР№
 
-                string w = FoundPpl(k);             // Берём ppl 
-                w[l - 1] = 0;
-                w[l - 2] = 0;
-                SaveHexs(k, w);                     // Записываем кол - во вакансий 0
-                return
+                bool N = true;
+                for(int i = 0; i < n / 7; i++){                         // РїСЂРѕРІРµСЂСЏРµРј Р‘Р” СЂР°Р±РѕС‚С‹ РЅР° РЅР°Р»РёС‡РёРµ РЅР°С€РµРіРѕ РґРѕРјР°
+                    if(FpplWork.Substring(i * 7, i * 7 + 6) == XY){     // РїСЂРё РЅР°С…РѕР¶РґРµРЅРёРё Р·Р°РїРѕРјРёРЅР°РµРј
+                        N = false;
+                    }
+                }
+                if(N){
+                    FpplWork = XY + FpplWork.Substring(0, n - 2) + "00";    // РґРѕР±Р°РІР»СЏРµРј РІ Р‘Р” РµСЃР»Рё РЅРµ РЅР°С€Р»Рё
+                }else{
+                    FpplWork = FpplWork.Substring(0, n - 2) + "00";
+                }
+
+                SaveHexs(WorkXY, FpplWork);                                         // РІР°РєР°РЅСЃРёР№ СЃС‚Р°РЅРѕРІРёС‚СЃСЏ РЅРѕР»СЊ
             }
             else
             {
+                pplWork -= pplHome;                                     // РєРѕР»-РІРѕ РІР°РєР°РЅСЃРёР№ СѓРјРµРЅСЊС€Р°РµС‚СЃСЏ РЅР° РєРѕР»-РІРѕ Р±РµР·СЂР°Р±РѕС‚РЅС‹С…
+                pplHome = 0;
 
+                FpplWork = FpplWork.Substring(0, n - 2) + pplWork.ToString();
+                SaveHexs(WorkXY, FpplWork);                             // СЃРѕС…СЂР°РЅРµРЅРёРµ РєРѕР»-РІРѕ РІРѕРєР°РЅСЃРёР№
             }
         }
-
     }
-    public void Sphere1(int XY)         // x дробный  ]
-    {
+    
 
+
+    void SphereRoad(int HomeXY, bool T, int pplHome){// РµСЃС‚СЊ Р»Рё РІРѕРєСЂСѓРі РґРѕСЂРѕРіРё
+        if(pplHome != 0){
+            RoadHexs(HomeXY + 1);
+            RoadHexs(HomeXY - 1);
+            RoadHexs(HomeXY + 100);
+            RoadHexs(HomeXY - 100);
+
+            if(T && pplHome != 0){
+                RoadHexs(HomeXY + 99);
+                RoadHexs(HomeXY - 101);
+            }
+            if(!T && pplHome != 0){
+                RoadHexs(HomeXY + 101);
+                RoadHexs(HomeXY - 99);
+            }
+        }
     }
+
+
+
+    //       РєРѕРѕСЂРґРёРЅР°С‚Р° РіРµРєСЃР°
+    void RoadHexs(int WorkXY){// РµСЃС‚СЊ Р»Рё РІ РіРµРєСЃРµ РґРѕСЂРѕРіР°
+        int a = (Found(WorkXY) / 10000) % 10;                                 // С‚РёРї Р·РґР°РЅРёСЏ
+        if (a == 1)                       // РёС‰РµРј Р·РґР°РЅРёСЏ СЂР°Р±РѕС‚С‹
+        {
+            int n = FoundPpl(WorkXY).Length;
+            string FpplWork = FoundPpl(WorkXY);
+        }
+    }
+
+
+
+
 
     void JsonDownload()
     {
-        string DataLocation = Path.Combine(Application.dataPath, "DataHexses.json");        // получение "ссылки" на файл
-        string json = File.ReadAllText(DataLocation);               // "запись" всего файла
-        data = JsonConvert.DeserializeObject<DataHexsesHome>(json);     // систематизация текста
+        string DataLocation = Path.Combine(Application.dataPath, "DataHexses.json");
+        string json = File.ReadAllText(DataLocation);
+        data = JsonConvert.DeserializeObject<DataHexsesHome>(json);
     }
     int Found(int xy)
     {
-        HexseHome hex = data.hexses.FirstOrDefault(h => h.xy == xy);    // поиск Type с подходящим xy
-        return hex.Type;                                        // берем значение Type
+        HexseHome hex = data.hexses.FirstOrDefault(h => h.xy == xy);
+        return hex.Type;
     }
 
+    
     string FoundPpl(int xy)
     {
-        HexseHome hex = data.hexses.FirstOrDefault(h => h.xy == xy);    // поиск Type с подходящим xy
-        return hex.ppl;                                        // берем значение Type
+        HexseHome hex = data.hexses.FirstOrDefault(h => h.xy == xy);
+        return hex.ppl;
     }
+
 
     public void SaveHexs(int xy, string newType)
     {
