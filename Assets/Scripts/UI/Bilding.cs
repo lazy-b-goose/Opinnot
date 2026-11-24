@@ -12,6 +12,7 @@ public class Bilding : MonoBehaviour
     {
         public int xy;
         public int Type;
+        public string ppl;
     }
 
     [System.Serializable]       // загрузка данных
@@ -162,6 +163,7 @@ public class Bilding : MonoBehaviour
         {
             hex = new Hexse();
             hex.xy = xy;
+            hex.ppl = "";
             data.hexses.Add(hex);
         }
 

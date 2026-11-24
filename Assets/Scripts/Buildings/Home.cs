@@ -32,12 +32,13 @@ public class Home : MonoBehaviour
 
     void Start()
     {
+        a = gameObject.transform.position;
         XY = 1000000 + System.Math.Abs((int)a.x) * 100 + System.Math.Abs((int)a.y);
         XYst = XY.ToString();
 
         JsonDownload();
 
-        a = gameObject.transform.position;
+        
         if ((a.x / 1) == 0)     
         {
             T = true;
@@ -58,7 +59,7 @@ public class Home : MonoBehaviour
     public void Sphere0(int HomeXY, bool T, string XY)
     {
         int n = FoundPpl(HomeXY).Length;
-        int pplHome = int.Parse(FoundPpl(HomeXY).Substring(n - 2, n - 1));           // количество безработных
+        int pplHome = int.Parse(FoundPpl(HomeXY).Substring(n - 2, 2));           // количество безработных
 
         if(pplHome == 0){
             SearchWork(HomeXY, T, pplHome, XY);
@@ -99,7 +100,7 @@ public class Home : MonoBehaviour
         {
             int n = FoundPpl(WorkXY).Length;
             string FpplWork = FoundPpl(WorkXY);
-            int pplWork = int.Parse(FpplWork.Substring(n - 2, n - 1));         // кол-во вакансий
+            int pplWork = int.Parse(FpplWork.Substring(n - 2, 2));         // кол-во вакансий
 
             if (pplHome >= pplWork)                                     // если безработных больше чем вакансий
             {
@@ -107,7 +108,7 @@ public class Home : MonoBehaviour
 
                 bool N = true;
                 for(int i = 0; i < n / 7; i++){                         // проверяем БД работы на наличие нашего дома
-                    if(FpplWork.Substring(i * 7, i * 7 + 6) == XY){     // при нахождении запоминаем
+                    if(FpplWork.Substring(i * 7, 7) == XY){     // при нахождении запоминаем
                         N = false;
                     }
                 }
