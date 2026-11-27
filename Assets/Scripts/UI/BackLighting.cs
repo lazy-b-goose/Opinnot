@@ -9,7 +9,7 @@ public class BackLighting : MonoBehaviour
         Panel.SetActive(false);
         GameObject BackLight = GameObject.Find("BackLighting");
         Vector3 pos = BackLight.transform.position;
-        pos.z = 1f;
+        pos.z = 2f;
         BackLight.transform.position = pos;
     }
 }

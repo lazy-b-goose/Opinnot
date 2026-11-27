@@ -1,11 +1,6 @@
 {
     "Resources": [
         {
-            "Gold": 0,
-            "Iron": 0,
-            "Stone": 0,
-            "Food": 0,
-            "People": 0,
             "Langage": "ru-RU"
         }
     ]
