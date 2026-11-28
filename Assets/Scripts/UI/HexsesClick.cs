@@ -29,7 +29,7 @@ public class HexsesClick : MonoBehaviour
             Vector3 pos = BackLight.transform.position;
             pos.x += 0.03f;
             pos.y += 0.03f;
-            pos.z = -1f;
+            pos.z = -2f;
             BackLight.transform.position = pos;
             Panel.SetActive(true);                  // активация строительного интерфейса
             xy = 1000000 + System.Math.Abs((int)transform.position.x) * 100 + System.Math.Abs((int)transform.position.y);     // координаты для JSON

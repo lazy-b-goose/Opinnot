@@ -236,7 +236,7 @@ public class Generation : MonoBehaviour
                         Instantiate(mountain, a, Quaternion.identity);    
                     }
 
-                    a.z = - 1f;
+                    a.z = - 1.5f;
                     if((Type / 1000) % 10 == 1){
                         Home.name = xy.ToString(); 
                         Instantiate(Home, a, Quaternion.identity);         // здания     
@@ -257,10 +257,10 @@ public class Generation : MonoBehaviour
                         Instantiate(Airport, a, Quaternion.identity);    
                     }
                     if(Type / 10000 == 1){
-                        a.z = - 1.5f;
+                        a.z = - 1f;
                         Road.name = 'R' + xy.ToString(); 
                         Instantiate(Road, a, Quaternion.identity);
-                        a.z = - 1f;
+                        a.z = - 1.5f;
                     }
                     a.x += 1f;                                                                 // переход на клетку вправо
                 }

@@ -205,7 +205,14 @@ public class Home : MonoBehaviour
     int Found(int xy) // загрузить Type
     {
         HexseHome hex = data.hexses.FirstOrDefault(h => h.xy == xy);
-        return hex.Type;
+
+        if (hex == null)
+        {
+            return 0;
+        }else{
+            return hex.Type;
+            }
+        
     }
 
     
